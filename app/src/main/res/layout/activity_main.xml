@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glownyWidok"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+
+        <TextView
+            android:id="@+id/tekstLicznik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licznik: 0"
+            android:textSize="24sp" />
+
+
+
+
+        <Button
+            android:id="@+id/przyciskZwieksz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zwiększ" />
+
+
+
+        <EditText
+            android:id="@+id/poleTekstowe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadź tekst" />
+
+        <CheckBox
+            android:id="@+id/poleZaznaczenie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcja zaznaczona" />
+
+        <TextView
+            android:id="@+id/tekstOpcji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opcja zaznaczona" 
+            android:visibility="gone"/>
+
+        <Switch
+            android:id="@+id/przelacznikMotywu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tryb ciemny"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/tekstInformacyjny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
